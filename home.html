@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CVR College of Engineering</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="cal.js" defer></script>
+</head>
+<body class="bg-dark text-light d-flex flex-column min-vh-100">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+    <div class="container-lg">
+      <a class="navbar-brand fw-bold fs-3" href="home.html">CVR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+          <li class="nav-item"><button class="btn btn-outline-warning ms-lg-2" data-bs-toggle="modal" data-bs-target="#calculatorModal">Calculator</button></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a class="btn btn-outline-success" href="login.html">Login</a>
+          <a class="btn btn-success" href="register.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="container-lg text-center my-5">
+    <h1 class="display-4 fw-bold">Welcome to CVR College of Engineering</h1>
+    <p class="lead">Empowering Innovation, Research, and Holistic Development</p>
+  </header>
+
+  <!-- Content Section -->
+  <main class="container-lg mb-5 flex-grow-1">
+    <div class="card bg-light text-dark shadow-lg rounded-4 p-4">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-4">About CVR</h2>
+        <p>CVR College of Engineering, Hyderabad, is a premier institution committed to innovation, research, and quality education, affiliated with JNTU Hyderabad and approved by AICTE.</p>
+        <p>Established in 2001, it offers a vibrant environment with state-of-the-art infrastructure and a focus on holistic student development across various engineering disciplines.</p>
+        <p>Join CVR to be part of a dynamic, inspiring community shaping tomorrow's leaders and innovators through excellence in academics and research.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-light py-3 mt-auto">
+    © 2025 CVR College of Engineering | <a href="mailto:info@cvr.ac.in" class="text-decoration-none text-light">info@cvr.ac.in</a>
+  </footer>
+
+  <!-- Calculator Modal -->
+  <div class="modal fade" id="calculatorModal" tabindex="-1" aria-labelledby="calculatorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-light text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="calculatorModalLabel">Simple Calculator</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="calculatorForm" class="d-grid gap-2">
+            <input type="number" step="any" class="form-control" placeholder="Enter first number" id="calcNum1" required>
+            <select class="form-select" id="calcOperation" required>
+              <option value="add">Addition</option>
+              <option value="subtract">Subtraction</option>
+              <option value="multiply">Multiplication</option>
+              <option value="divide">Division</option>
+            </select>
+            <input type="number" step="any" class="form-control" placeholder="Enter second number" id="calcNum2" required>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+            <div id="calcResult" class="alert alert-info text-center d-none"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

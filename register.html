@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register | CVR College of Engineering</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-light d-flex flex-column min-vh-100">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+  <div class="container-lg">
+    <a class="navbar-brand fw-bold fs-3" href="index.html">CVR</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+      </ul>
+      <a class="btn btn-outline-success" href="login.html">Login</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Register Form -->
+<main class="container d-flex justify-content-center align-items-center flex-grow-1">
+  <div class="card bg-light text-dark shadow rounded-4 p-4 w-100" style="max-width: 400px;">
+    <h2 class="text-center fw-bold mb-4">Register</h2>
+    <form class="d-grid gap-3" id="registerForm">
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+        <input type="text" class="form-control" placeholder="Full Name" name="fullname" required autocomplete="name" />
+      </div>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa-regular fa-envelope"></i></span>
+        <input type="email" class="form-control" placeholder="Email" name="email" required autocomplete="email" />
+      </div>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa-regular fa-circle-user"></i></span>
+        <input type="text" class="form-control" placeholder="Username" name="username" required autocomplete="username" />
+      </div>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+        <input type="password" class="form-control" placeholder="Password" name="password" required autocomplete="new-password" />
+      </div>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+        <input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password" required autocomplete="new-password" />
+      </div>
+      <button type="submit" class="btn btn-success w-100">Register</button>
+      <button type="reset" class="btn btn-secondary w-100">Reset</button>
+    </form>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-light py-3 mt-auto">
+  © 2025 CVR College of Engineering | <a href="mailto:info@cvr.ac.in" class="text-decoration-none text-light">info@cvr.ac.in</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
